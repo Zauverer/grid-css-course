@@ -140,3 +140,24 @@ html {
 .footer{
   grid-area: footer;
 }
+
+.grid-implicit {
+  width: 40%;
+  display: grid;
+  display: inline-grid;
+  /* Grid de 4cx3r */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 200px);
+}
+
+.grid-flow {
+  display: grid;
+  /* Grid de 5cx3r */
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 150px);
+  grid-auto-flow: row;
+  grid-auto-rows: 100px;
+  grid-auto-flow: column;
+  grid-auto-columns: 50px;
+}
+
